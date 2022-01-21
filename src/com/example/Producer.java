@@ -28,6 +28,7 @@ public class Producer {
         properties.put("ssl.keystore.location", certPath + "/keystore.p12");
         properties.put("ssl.keystore.password", "welcome1");
         properties.put("ssl.keystore.type" , "PKCS12");
+	properties.put("group.id", "test-group");
 
         KafkaProducer kafkaProducer = new KafkaProducer(properties);
 
